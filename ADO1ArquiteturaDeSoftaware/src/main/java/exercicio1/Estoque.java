@@ -3,8 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
  */
 package exercicio1;
-
-import exercicio1.Produto;
 import java.util.List;
 
 /**

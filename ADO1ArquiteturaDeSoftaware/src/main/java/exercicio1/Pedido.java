@@ -11,12 +11,18 @@ import java.util.List;
  *
  * @author alexs
  */
+
+/* Aqui está sendo estabelecida uma composição forte entre a classe Pedido e a classe ItensPedido.
+   A composição forte é caracterizada pela criação e gerenciamento dos objetos de ItensPedido diretamente pela classe Pedido,
+   garantindo que cada pedido possua sua própria lista de itens e permitindo operações específicas relacionadas aos itens dentro de um pedido. */
 public class Pedido {
 
+    /*AQUI POR ESTA DECLARANDO UMA LISTA DE ITEMPEDIDO JA ESTA INDICANDO UMA RELAÇAO DAS CLASSES*/
     private List<ItemPedido> itensPedido;
     private double valorTotal;
     private Estoque estoque;
-    /*aqui esta sendo feito a composiçao forte entre itensPedido com a pedido*/
+
+    /*AQUI NESSE CONTRUTOR TBM ESTA SENDO UMA RELAÇAO AO INSTANCIAR A LISTA*/
     public Pedido(Estoque estoque) {
 
         this.itensPedido = new ArrayList<>();
@@ -26,6 +32,7 @@ public class Pedido {
 
     /*metodo para antes de adicionar no pedido ver se tem em estoque a quantidade e se nao tiver avisar qual  nao tem e a quantidade disponivel*/
  /*esse metodo esta verificando se a quantidade tem no estoque e se  tiver esta usando o metodo de remover a quantidade do estoque passando o codigo do produto e a quantidade a ser removida*/
+ /*JA AQUI NO METODO QUE FICA A RELAÇAO FORTE POS A CLASSE PEDIDO ESTA GERENCIANDO OS DADOS A  CLASSE ITEMPEDIDO*/
     public void adicionarItem(ItemPedido item) {
         Produto produto = item.getProduto();
 
@@ -42,6 +49,7 @@ public class Pedido {
                 }
             } else {
                 System.out.println("A quantidade do item " + produto.getCategoria() + " é maior do que a quantidade disponível em estoque.");
+
                 System.out.println("Quantidade em estoque: " + quantidadeDisponivel);
             }
         } else {

@@ -3,25 +3,21 @@
  */
 package exercicio1;
 
-import exercicio1.Estoque;
-import exercicio1.EstoqueProduto;
-import exercicio1.ItemPedido;
-import exercicio1.Pedido;
-import exercicio1.Produto;
-
 /**
  *
  * @author alexs
- */ 
+ */
 public class RealizarPedido {
 
     public static void main(String[] args) {
 
         Estoque estoque = new EstoqueProduto();
+
         estoque.carregarProdutos();
+        System.out.println(estoque.verEstoque());
 
         /*realizando um pedido*/
- /*produto com codigo 1, preço 23.0 e categora Limpeza*/
+    /*produto com codigo 1, preço 23.0 e categora Limpeza*/
         Produto produto1 = new Produto(1, 23.0, "Limpeza");
         Produto produto2 = new Produto(2, 1543.0, "Eletrônico");
         Produto produto3 = new Produto(3, 50.30, "Bebidas Refrescante");
@@ -31,10 +27,10 @@ public class RealizarPedido {
         /*adicionando um produto que nao tem em estoque para que seja possivel apresentar o erro de adicionar produto que nao tem em estoque*/
         Produto produtoInvalido = new Produto(7, 15.21, "PNEU");
 
-        ItemPedido item1 = new ItemPedido(5, produto1);
-        ItemPedido item2 = new ItemPedido(5, produto2);
-        ItemPedido item3 = new ItemPedido(5, produto3);
-        ItemPedido item4 = new ItemPedido(5, produto4);
+        ItemPedido item1 = new ItemPedido(1, produto1);
+        ItemPedido item2 = new ItemPedido(1, produto2);
+        ItemPedido item3 = new ItemPedido(1, produto3);
+        ItemPedido item4 = new ItemPedido(1, produto4);
         /*aqui adicionando um intem que tem a quantidade maior do que no estoque para testar se vai negar a venda dessa quantidade*/
         ItemPedido item5 = new ItemPedido(6, produto5);
 

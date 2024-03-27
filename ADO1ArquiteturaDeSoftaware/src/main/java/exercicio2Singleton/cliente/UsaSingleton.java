@@ -10,7 +10,6 @@ package exercicio2Singleton.cliente;
  *
  */
 import exercicio2Singleton.Singleton;
-import exercicio2Singleton.Singleton;
 
 public class UsaSingleton extends Thread {
 

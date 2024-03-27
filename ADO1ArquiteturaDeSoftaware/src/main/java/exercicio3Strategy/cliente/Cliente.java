@@ -5,6 +5,16 @@ import exercicio3Strategy.SortEstrategy;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/**
+ *
+ * @author alexs classe Cliente é responsável por interagir com o usuário,
+ * permitindo que ele escolha o algoritmo desejado para ordenar o vetor. Utiliza
+ * um loop while para garantir que o usuário escolha uma opção válida (entre 1 e
+ * 3) para selecionar o algoritmo de ordenação. Usa a classe Scanner para
+ * capturar a escolha do usuário via teclado. Após a escolha do algoritmo, cria
+ * uma instância do tipo SortEstrategy correspondente à escolha do usuário e
+ * invoca o método ordenar() desse tipo, passando o vetor a ser ordenado.
+ */
 /*aqui o cliente comparado com o exemplo do professor seria a classe Cliente*/
 public class Cliente {
 

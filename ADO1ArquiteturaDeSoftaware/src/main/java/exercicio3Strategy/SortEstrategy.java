@@ -6,7 +6,15 @@ package exercicio3Strategy;
 
 /**
  *
- * @author alexs
+ * @author alexs Enum SortEstrategy (Estratégias de Ordenação):
+ *
+ * O enum SortEstrategy define três constantes, cada uma representando um tipo
+ * de algoritmo de ordenação (INSERTION_SORT, SELECTION_SORT e BUBBLE_SORT).
+ * Cada constante implementa a interface Estrategia, que contém o método
+ * ordenar(int[] v) que será responsável por ordenar o vetor de inteiros. Cada
+ * método ordenar na enumeração implementa o algoritmo correspondente (insertion
+ * sort, selection sort, bubble sort) para ordenar o vetor de inteiros passado
+ * como parâmetro.
  *
  */
 

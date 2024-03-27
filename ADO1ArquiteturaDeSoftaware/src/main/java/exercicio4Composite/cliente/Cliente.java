@@ -4,7 +4,7 @@ import exercicio4Composite.composicao.Pedido;
 import exercicio4Composite.composicao.CaixaProdutos;
 import exercicio4Composite.composicao.Produto;
 
-public class main {
+public class Cliente {
 
     public static void main(String[] args) {
         /*criando produtos (folhas Simples)para amazenar na caixa e depois colocar em outra caixa*/
